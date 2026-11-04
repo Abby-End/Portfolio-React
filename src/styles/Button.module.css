@@ -1,0 +1,35 @@
+
+    .primary{
+        background: var(--Berry);
+        font-family: var(--FontBody);
+        color: var(--CreamWhite);
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        padding: 0.7rem 1.5rem;
+        border: 2px solid var(--GlassBorder);
+        border-radius: 12px;
+        transition: background 0.4s;
+
+    }
+
+    .primary:hover {
+       background: var(--Berry);
+    }
+
+    .secondary{
+        background: var(--CreamWhite);
+        font-family: var(--FontBody);
+        color: var(--TextMuted);
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        padding: 0.7rem 1.5rem;
+        border: 2px solid var(--GlassBorder);
+        border-radius: 12px;
+        transition: background 0.4s;
+    }
+
+    .secondary:hover {
+       background: var(-- --PaleGreenHighlight);
+    }
