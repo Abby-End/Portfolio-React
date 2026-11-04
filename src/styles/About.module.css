@@ -1,0 +1,188 @@
+.about {
+    box-sizing: border-box;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+}
+
+/* ---------- header ---------- */
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: var(--SizeSubText);
+    color: var(--TextMuted);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3rem);
+    background: linear-gradient(90deg, var(--Berry), var(--HotPink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ---------- two-column layout ---------- */
+.layout {
+    display: grid;
+    grid-template-columns: minmax(20rem, 30rem) 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ---------- profile card ---------- */
+.profile {
+    display: flex;
+    gap: 1.5rem;
+    min-height: 22rem;
+}
+
+.photoWrap {
+    position: relative;
+    flex-shrink: 0;
+    align-self: flex-end;
+    width: 11rem;
+    padding-top: 3rem;
+}
+
+.photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.plumbob {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2.5rem;
+    transform: translateX(-50%);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%      { transform: translateX(-50%) translateY(-0.5rem); }
+}
+
+.info {
+    flex: 1;
+    min-width: 0;
+}
+
+.info h3 {
+    margin: 0 0 0.5rem;
+}
+
+.role {
+    margin: 0 0 1rem;
+    font-size: var(--SizeSubText);
+    color: var(--TextMuted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.bio {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--TextDark);
+}
+
+/* ---------- hobbies card ---------- */
+.hobbiesTitle {
+    margin: 0 0 0.75rem;
+    font-size: var(--SizeSubText);
+    color: var(--Berry);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hobbyIcon {
+    margin-right: 0.5rem;
+}
+
+/* ---------- timeline ---------- */
+.timeline {
+    margin: 0;
+    padding: 0 0 0 2rem;
+    list-style: none;
+    border-left: 2px solid var(--Lime);
+}
+
+.entry {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.entry:last-child {
+    padding-bottom: 0;
+}
+
+.entry::before {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    left: calc(-2rem - 7px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--Berry);
+}
+
+.year {
+    display: block;
+    font-size: var(--SizeSubText);
+    color: var(--TextMuted);
+}
+
+.entry h3 {
+    margin: 0.25rem 0;
+}
+
+.entry p {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--TextDark);
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 800px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        min-height: 0;
+        text-align: center;
+    }
+
+    .photoWrap {
+        align-self: center;
+    }
+}

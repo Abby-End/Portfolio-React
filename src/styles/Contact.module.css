@@ -1,0 +1,65 @@
+
+.section {
+  padding: 5rem 8%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+  color: var(--TextMuted);
+  font-size: var(--SizeSubText);
+  line-height: 1.8;
+  max-width: 650px;
+  margin: -1.5rem auto 3rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.detailCard {
+  width: 100%;
+}
+
+.detailCard > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+}
+
+.detailIcon {
+  font-size: 1.4rem;
+}
+
+.detailLabel {
+  font-size: 0.7rem;
+  color: var(--TextMuted);
+  margin: 0 0 0.4rem;
+}
+
+.detailValue {
+  font-size: var(--SizeSubText);
+  color: var(--TextDark);
+  margin: 0;
+  text-decoration: none;
+}
+
+a.detailValue:hover {
+  color: var(--Berry);
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .section {
+    padding: 4rem 5%;
+  }
+}

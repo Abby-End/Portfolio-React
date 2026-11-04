@@ -57,6 +57,15 @@ h1 {
   color: var(--Heading);
 }
 
+h2, h3 {
+    font-family: var(--FontHeading);
+    font-weight: 400;
+    color: var(--Heading);
+}
+
+h2 { font-size: 2rem; }
+h3 { font-size: 1.25rem; }
+
 /*Body*/
 body {
   margin: 0;
