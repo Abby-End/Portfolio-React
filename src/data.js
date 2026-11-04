@@ -149,7 +149,7 @@ export const projects = [
         id: 2,
         number: "02",
         category: "WEB DESIGN",
-        title: "Apple Website (Now)",
+        title: "Apple Website (New)",
         description:
             "A minimalist website inspired by Apple's clean design language, featuring soft colors, elegant layouts, and smooth visuals.",
         image: "/lavender.png",
