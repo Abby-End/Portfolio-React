@@ -214,14 +214,14 @@ export const contact = {
             icon: "✉️",
             label: "Email",
             value: "abigiyaendale2@gmil.com",
-            href: "#",
+            href: "abigiyaendale2@gmil.com",
         },
         {
             id: 2,
             icon: "💻",
             label: "GitHub",
             value: "Abby-End",
-            href: "#",
+            href: "https://github.com/Abby-End",
         },
         {
             id: 3,
