@@ -1,0 +1,78 @@
+:root {
+  /*background gradient*/
+  /*Greens*/
+  --Lime: #B5E04A;
+  --SoftLime: #C9E86B;
+  --PaleGreenHighlight: #E4F2B0;
+
+  /*Pinks*/
+  --SoftPink: #F5A3C7;
+  --Blush: #EFA0A8;
+
+  /*lights*/
+  --CreamWhite: #F8FCE8;
+
+  /*Text*/
+  --TextDark: #2F3A1F;
+  --TextMuted: #55663A;
+  --Heading: #5A1636;
+
+  /* Interactive */
+  --Berry: #B3124F;
+  --BerryDark: #8F0E3F;
+  --HotPink: #E8407F;
+
+  /* Surface */
+  --GlassFill: rgba(255, 255, 255, 0.35);
+  --GlassBorder: rgba(255, 255, 255, 0.7);
+
+  /*Shadow*/
+  --Shadow: rgba(47, 58, 31, 0.18);
+
+  /*Typography*/
+  /*Fonts*/
+  --FontHeading: "Geist Pixel", monospace;
+  --FontBody: "Silkscreen", monospace;
+
+  /*Size*/
+  --SizeHeading: 1.5rem;
+  --SizeBody: 1rem;
+  --SizeSubText: 0.9rem; 
+  
+}
+
+/*For the scroll bar*/
+html {
+  scrollbar-color: var(--Berry) var(--CreamWhite);
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+
+}
+
+/*Headings*/
+h1 {
+  font-family: var(--FontHeading);
+  font-size: var(--SizeHeading);
+  font-weight: 400;
+  color: var(--Heading);
+}
+
+/*Body*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    var(--Lime),
+    var(--SoftLime),
+    var(--PaleGreenHighlight),
+    var(--SoftPink),
+    var(--Blush),
+    var(--CreamWhite)
+  );
+  
+  font-family: var(--FontBody);
+  font-size: var(--SizeBody);
+  color: var(--TextDark);
+}
+
