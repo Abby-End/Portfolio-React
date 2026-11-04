@@ -1,0 +1,50 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 6rem 1.5rem 3rem;
+}
+
+.avatar {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid var(--Blush);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    max-width :35rem;
+    width: 100%;
+    padding:1rem;
+    border-radius:12px;
+    background: var(--GlassFill);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--GlassBorder);
+    box-shadow: 0 8px 24px var(--Shadow);
+}
+
+.eyebrow {
+    font-size: var(--SizeSubText);
+    color: var(--TextMuted);
+    text-transform: uppercase;
+}
+
+.intro {
+    line-height: 1.6;
+    color: var(--TextDark);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
