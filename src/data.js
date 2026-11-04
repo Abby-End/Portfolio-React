@@ -22,3 +22,15 @@ export const navLinks = [
     {id:4, label: "Skills", href: '#skills'},
     {id:5, label: "Contact", href: '#contact'},
 ];
+
+
+/*Hero content*/
+export const hero ={
+    eyebrow: "JUNIOR FRONT-END DEVELOPER",
+    title: "Crafting Digital Experience with Heart",
+    intro: "Passionate about creating fun, interactive, and visually engaging websites, and the magic in between.",
+
+}
+    
+
+
