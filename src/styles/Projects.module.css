@@ -1,0 +1,116 @@
+
+.section {
+  padding: 4rem 8%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projectCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Alternate image positions */
+.projectCard:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.projectImage {
+  flex: 1;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.projectImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectInfo {
+  flex: 1;
+  position: relative;
+}
+
+.projectNumber {
+  font-family: var(--FontHeading);
+  font-size: 3rem;
+  color: var(--Heading);
+  opacity: 0.5;
+}
+
+.projectCategory {
+  font-size: var(--SizeSubText);
+  color: var(--TextMuted);
+  text-transform: uppercase;
+}
+
+.projectTitle {
+  font-family: var(--FontHeading);
+  color: var(--Heading);
+  font-size: 1.2rem;
+}
+
+.projectDescription {
+  font-size: var(--SizeSubText);
+  color: var(--TextDark);
+  line-height: 1.7;
+}
+
+.projectTech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.techTag {
+  background: var(--GlassFill);
+  border: 1px solid var(--GlassBorder);
+  border-radius: 20px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLinks a {
+  color: var(--Berry);
+  text-decoration: none;
+  font-size: var(--SizeSubText);
+}
+
+.projectLinks a:hover {
+  color: var(--HotPink);
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .projectCard,
+  .projectCard:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .projectImage {
+    width: 100%;
+    flex: none;
+  }
+
+  .projectInfo {
+    width: 100%;
+  }
+}
