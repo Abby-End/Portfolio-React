@@ -30,7 +30,7 @@
 }
 
 .secondary:hover {
-    background: var(-- --PaleGreenHighlight);
+    background: var(--PaleGreenHighlight);
 }
 
 .primary span,
