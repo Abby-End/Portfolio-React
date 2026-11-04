@@ -213,7 +213,7 @@ export const contact = {
             id: 1,
             icon: "✉️",
             label: "Email",
-            value: "Your email address",
+            value: "abigiyaendale2@gmil.com",
             href: "#",
         },
         {
@@ -227,7 +227,7 @@ export const contact = {
             id: 3,
             icon: "💼",
             label: "LinkedIn",
-            value: "Connect with me",
+            value: "linkedin.com/in.abigiyae",
             href: "#",
         },
         {
